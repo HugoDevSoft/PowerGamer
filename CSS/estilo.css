@@ -325,6 +325,7 @@ button:hover {
 
 
 @media (min-width: 730px) {
+    
     nav {
         display: flex;
         position: relative;

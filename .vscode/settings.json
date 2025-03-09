@@ -1,3 +1,7 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "files.associations": {
+        "testeee.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

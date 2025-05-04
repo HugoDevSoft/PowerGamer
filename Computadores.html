@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power Gamimg</title>
-    <link rel="icon" href="imagens/logofooter.jpg" alt="Logotipo">
-    <link rel="StyleSheet" type="text/css" href="CSS/estilo.css">
     <meta description
         content="Seja bem-vindo ao mundo dos Games e a nossa loja a Power Gaming uma loja voltada para gamers casuais e profissionais">
+    <title>Pcs - Power Gaming</title>
+    <link rel="icon" href="imagens/logofooter.jpg" alt="Logotipo">
+    <link rel="styleSheet" type="text/css" href="CSS/estilo.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
 </head>
@@ -111,6 +111,7 @@
 
     <script src="js/jquery-3.7.1.js"></script>
     <script src="slick/slick.js"></script>
+    <script src="js/botaoHambuguer.js"></script>
     <script>
         $(document).ready(function () {
             $('#destaque-s').slick({
@@ -119,13 +120,6 @@
                 dots: true,
                 arrows: false,
             });
-        });
-
-        const hamburgerMenu = document.querySelector('.hamburger-menu');
-        const navLinks = document.querySelector('.nav');
-
-        hamburgerMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
         });
 
     </script>

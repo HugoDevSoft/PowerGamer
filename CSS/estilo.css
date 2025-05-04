@@ -241,6 +241,7 @@ button {
     border: solid 3px #d1d1d1;
     border-radius: 4px;
     background-color: #fff;
+   
 
 }
 
@@ -281,6 +282,7 @@ button:hover {
 }
 
 .card-formulario {
+    justify-content: center;
     width: 200px;
     margin: 4px auto;
     background-color: #ffffff;
@@ -310,7 +312,7 @@ button:hover {
         top: 109px;
         right: 1px;
         background-color:#91e5f3;
-        width: 45%;
+        width: 29%;
         gap: 3px;
         box-shadow: none;
         z-index: 1000
@@ -320,6 +322,7 @@ button:hover {
         display: flex;
         align-items: center;
         border-radius: 4px;
+        padding: 10px;
     }
 }
 

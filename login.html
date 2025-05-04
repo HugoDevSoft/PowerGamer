@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description
         content="Seja bem-vindo ao mundo dos Games e a nossa loja a Power Gaming uma loja voltada para gamers casuais e profissionais">
-    <title>Cadastro Power Gaming</title>
+    <title>Login Power gaming</title>
     <link rel="icon" href="imagens/logofooter.jpg" alt="Logotipo">
     <link rel="styleSheet" type="text/css" href="CSS/estilo.css">
     <link rel="stylesheet" href="slick/slick.css">
@@ -39,11 +39,14 @@
     </header>
 
     <main id="conteudo">
-
-        <form class="formulario" method="" action="" name="cadastro-form" id="cadastro-form">
+        <form class="formulario" method="post" action="login.php" name="login-form" id="login-form">
             <div class="card-formulario">
-                <h3 style="color: #37a0e0;">Já possuo cadastro</h3>
+                <h3 style="color: #37a0e0;">Não possuo cadastro</h3>
                 <br>
+                <p>
+                    <label for="login-nome">Nome:</label>
+                    <br><input required type="name" name="name" id="login-nome">
+                </p>
                 <p>
                     <label for="login-email">E-mail:</label>
                     <br><input required type="email" name="email" id="login-email">
@@ -53,14 +56,8 @@
                     <br><input required type="password" name="senha" id="login-senha">
                 </p>
                 <br>
-                <button type="submit" class="bt-formulario">Login</button>
-                <div id="login-error" style="color: red;"></div>
-                <h3 style="color: #37a0e0;">
-                    Ainda não tem conta?
-                </h3>
-                <button type="button" class="bt-formulario" id="botaoCadastro">Cadastre-se</button>
+                <button type="button" class="bt-formulario" id="botaoCadastro">Cadastrar</button>
             </div>
-
         </form>
     </main>
 
@@ -88,11 +85,7 @@
     </footer>
 
     <script src="js/botaoHambuguer.js"></script>
-    <script>
-        document.getElementById('botaoCadastro').addEventListener('click', function () {
-            window.location.href = 'login.html';
-        });
-    </script>
+
 
 </body>
 

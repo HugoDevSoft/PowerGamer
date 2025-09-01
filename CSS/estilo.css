@@ -117,9 +117,7 @@ nav a:active {
     margin: -4px;
 }
 
-/* #conteudo{
 
-} */
 
 footer {
     display: flex;
@@ -129,7 +127,7 @@ footer {
     background-color: #0cc1df;
     border-top: solid 2px #000000;
     box-shadow: 0 0 10px #04a0fa, 0 0 70px#c0c0c0;
-    padding-top: 3px;
+    padding-top: 15px;
     gap: 27px
 }
 
@@ -241,7 +239,7 @@ button {
     border: solid 3px #d1d1d1;
     border-radius: 4px;
     background-color: #fff;
-   
+
 
 }
 
@@ -311,7 +309,7 @@ button:hover {
         position: absolute;
         top: 109px;
         right: 1px;
-        background-color:#91e5f3;
+        background-color: #91e5f3;
         width: 29%;
         gap: 3px;
         box-shadow: none;
@@ -324,11 +322,22 @@ button:hover {
         border-radius: 4px;
         padding: 10px;
     }
+
+    .mapa {
+        width: 10%;
+    }
+
 }
 
 
 @media (min-width: 730px) {
-    
+
+    .mapa {
+        width: 10%;
+    }
+
+
+
     nav {
         display: flex;
         position: relative;
@@ -376,6 +385,11 @@ button:hover {
 }
 
 @media (min-width: 869px) {
+    .mapa {
+        width: 10%;
+    }
+
+
     .pai {
         display: flex;
         flex-direction: row;

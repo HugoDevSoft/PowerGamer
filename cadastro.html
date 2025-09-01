@@ -15,8 +15,6 @@
 </head>
 
 <body>
-    <!-- HEADER/CABEÇALHO -->
-
     <header id="inicio">
         <div id="logo-header">
             <a href="index.html"><img src="imagens/logopower.png" alt="logo-header" class="Logotipo"></a>
@@ -40,28 +38,29 @@
 
     <main id="conteudo">
 
-        <form class="formulario" method="" action="" name="cadastro-form" id="cadastro-form">
+        <form class="formulario" name="cadastro-form" id="cadastro-form">
             <div class="card-formulario">
-                <h3 style="color: #37a0e0;">Já possuo cadastro</h3>
+                <h3 style="color: #37a0e0;">Cadastre-se</h3>
                 <br>
                 <p>
-                    <label for="login-email">E-mail:</label>
-                    <br><input required type="email" name="email" id="login-email">
+                    <label for="cadastro-nome">Nome:</label>
+                    <br><input required type="text" name="name" id="cadastro-name">
                 </p>
                 <p>
-                    <label for="login-senha">Senha</label>
-                    <br><input required type="password" name="senha" id="login-senha">
+                    <label for="cadastro-email">E-mail:</label>
+                    <br><input required type="email" name="email" id="cadastro-email">
+                </p>
+                <p>
+                    <label for="cadastro-senha">Senha:</label>
+                    <br><input required type="password" name="password" id="cadastro-senha">
                 </p>
                 <br>
-                <button type="submit" class="bt-formulario">Login</button>
-                <div id="login-error" style="color: red;"></div>
-                <h3 style="color: #37a0e0;">
-                    Ainda não tem conta?
-                </h3>
-                <button type="button" class="bt-formulario" id="botaoCadastro">Cadastre-se</button>
+                <button type="submit" class="bt-formulario">Cadastrar</button>
+                <div id="message" style="color: green; margin-top: 10px;"></div>
+                <div id="error-message" style="color: red; margin-top: 10px;"></div>
             </div>
-
         </form>
+
     </main>
 
     <footer>
@@ -87,13 +86,53 @@
 
     </footer>
 
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="slick/slick.js"></script>
     <script src="js/botaoHambuguer.js"></script>
     <script>
-        document.getElementById('botaoCadastro').addEventListener('click', function () {
-            window.location.href = 'login.html';
-        });
-    </script>
+        $(document).ready(function () {
+            $('#destaque-s').slick({
+                autoplay: true,
+                autoplaySpeed: 2200,
+                dots: true,
+                arrows: false,
+            });
 
+            $('#cadastro-form').submit(function (event) {
+                event.preventDefault(); // Impede o envio do formulário padrão
+
+                // Coleta os dados do formulário
+                const name = $('#cadastro-name').val();
+                const email = $('#cadastro-email').val();
+                const password = $('#cadastro-senha').val();
+
+                const userData = {
+                    name: name,
+                    email: email,
+                    password: password
+                };
+
+                // Envia a requisição POST para a API
+                $.ajax({
+                    url: 'http://localhost:8080/api/users/register',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(userData),
+                    success: function (response) {
+                        $('#message').text(response).show();
+                        $('#error-message').hide();
+                        $('#cadastro-form')[0].reset(); // Limpa o formulário
+                    },
+                    error: function (xhr, status, error) {
+                        const errorMessage = xhr.responseText || 'Erro ao registrar usuário.';
+                        $('#error-message').text(errorMessage).show();
+                        $('#message').hide();
+                    }
+                });
+            });
+        });
+
+    </script>
 </body>
 
 </html>

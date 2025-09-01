@@ -104,17 +104,20 @@
             </div>
 
             <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.9095933317496!2d-46.63951653036738!3d-23.53900486916648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce585a5ee796b5%3A0x7f480af54ff0b13e!2sShopping%20Santa%20Ifig%C3%AAnia!5e0!3m2!1spt-BR!2sbr!4v1750992128341!5m2!1spt-BR!2sbr" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.9095933317496!2d-46.63951653036738!3d-23.53900486916648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce585a5ee796b5%3A0x7f480af54ff0b13e!2sShopping%20Santa%20Ifig%C3%AAnia!5e0!3m2!1spt-BR!2sbr!4v1750992128341!5m2!1spt-BR!2sbr"
+                    width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-        <div class="assinatura">
-        <h4>Power Gaming Hugao®DevsØƒt | Todos os direitos reservados™ 2025</h4>
-        </div>
+            <div class="assinatura">
+                <h4>Power Gaming Hugao®DevsØƒt | Todos os direitos reservados™ 2025</h4>
+            </div>
 
     </footer>
 
     </footer>
-            
+
 
     <script src="js/jquery-3.7.1.js"></script>
     <script src="slick/slick.js"></script>
@@ -128,7 +131,7 @@
             });
         });
 
-           </script>
+    </script>
 </body>
 
 </html>
@@ -139,42 +142,41 @@ include_once './conexao.php';
 
 try {
 
-	if (isset($_POST['codigo']) && isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['senha']) ) {
-		$codigo = $_POST['codigo'];
-		$nome = $_POST['nome'];
-		$acao = $_POST['acao'];
-		$id = $_POST['id'];
+    if (isset($_POST['codigo']) && isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['senha'])) {
+        $codigo = $_POST['codigo'];
+        $nome = $_POST['nome'];
+        $acao = $_POST['acao'];
+        $id = $_POST['id'];
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
-		$codigo = (int) $codigo;
-		$acao = (int) $acao;
+        $codigo = (int) $codigo;
+        $acao = (int) $acao;
 
 
-		//$conn = mysqli_connect('localhost:3306', 'root', 'admin', 'sistema') or die('Erro ao conectar ao banco de dados');
+        //$conn = mysqli_connect('localhost:3306', 'root', 'admin', 'sistema') or die('Erro ao conectar ao banco de dados');
 
-		echo "<br>";
+        echo "<br>";
 
-		if ($acao == 1) {
+        if ($acao == 1) {
 
-			$sql = "INSERT INTO clientes VALUES ($codigo, $nome, $email, $senha);";
-			if (mysqli_query($conn, $sql)) {
-				echo "Cadastrado";
-			} else {
-				echo "ERRO " . $sql . "<br>" . mysqli_error($conn);
-			}
-		}
-	
-
+            $sql = "INSERT INTO clientes VALUES ($codigo, $nome, $email, $senha);";
+            if (mysqli_query($conn, $sql)) {
+                echo "Cadastrado";
+            } else {
+                echo "ERRO " . $sql . "<br>" . mysqli_error($conn);
+            }
+        }
 
 
-		mysqli_close($conn);
-	}
+
+
+        mysqli_close($conn);
+    }
 } catch (Exception $e) {
-	echo 'Erro: ',  $e->getMessage(), "\n";
+    echo 'Erro: ', $e->getMessage(), "\n";
 } finally {
 }
 
 
 ?>
-

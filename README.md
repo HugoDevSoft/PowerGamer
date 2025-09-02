@@ -1,77 +1,43 @@
-PowerGamer - Back-end de E-commerce
-Este projeto é a API de back-end para uma plataforma de e-commerce chamada PowerGamer. Ele foi desenvolvido como parte de um estudo aprofundado em Java com o framework Spring Boot, focando nas melhores práticas de desenvolvimento, segurança e persistência de dados.
+---->> 1. Título do Projeto e Descrição <<----
+##### PowerGamer: API de E-commerce com Spring Boot #####
+API RESTful completa para um e-commerce de jogos, desenvolvida para gerenciar usuários, autenticação e futuros módulos de produtos. 
+Este projeto demonstra habilidades em desenvolvimento backend, arquitetura de APIs e integração com banco de dados.
 
-Tecnologias e Ferramentas
-O projeto foi construído utilizando as seguintes tecnologias:
+---->> 2. Tecnologias Utilizadas <<----
+##### Tecnologias #####
+- **Backend**: Java 17, Spring Boot 3.5.5
+- **Gerenciamento de Dependências**: Maven
+- **Banco de Dados**: MySQL
+- **ORM**: Spring Data JPA, Hibernate
+- **Segurança**: Spring Security, JWT (futuro)
+- **Autenticação**: BCrypt para criptografia de senhas
+- **Ferramentas**: Postman para testes de API
 
-Java 17: A linguagem de programação principal.
+---->> 3. Como Rodar o Projeto <<----
+##### Como Rodar o Projeto #####
+  1A.  **Clone o repositório:**
+    `git clone https://www.youtube.com/watch?v=GRf6so_sois`
+  2A.  **Configuração do Banco de Dados:**
+    - Certifique-se de ter o MySQL instalado e rodando.
+    - Crie um banco de dados com o nome `powergamer_db`.
+    - Atualize o arquivo `src/main/resources/application.properties` com suas credenciais do MySQL.
+  3A.**Executar o Projeto:**
+    - Abra o projeto na sua IDE (IntelliJ, VS Code).
+    - Execute o comando `mvn clean install` no terminal da pasta `BACK-END/ecommerce`.
+    - Inicie a aplicação Spring Boot a partir da sua IDE.
+---->> 4. Endpoints da API <<----  
+### Endpoints da API
+**Registrar um novo usuário**
+**Login do Usuário** (será implementado na próxima etapa)
 
-Spring Boot 3.5.5: Framework para construção de aplicações robustas.
 
-Spring Security: Módulo de segurança para autenticação e autorização, com implementação de JWT para login.
+###### Autor ######
+ HUGO DEV SOFT 
 
-Spring Data JPA: Mapeamento Objeto-Relacional para interagir com o banco de dados.
 
-Hibernate: Provedor de persistência.
 
-MySQL: Banco de dados relacional.
 
-Maven: Gerenciador de dependências e build.
 
-Lombok: Biblioteca para reduzir código boilerplate (getters, setters, construtores).
-
-Funcionalidades da API
-A API oferece os seguintes endpoints:
-
-Registro de Usuário: Cria um novo usuário no sistema com senha criptografada.
-
-Autenticação de Usuário: Realiza o login, verificando credenciais e gerando um token JWT.
-
-Segurança: Implementa uma camada de segurança robusta para proteger os endpoints da API.
-
-CORS: Configuração de Cross-Origin Resource Sharing para permitir requisições de outras origens.
-
-Como Executar o Projeto
-Siga os passos abaixo para rodar a aplicação localmente:
-
-1. Pré-requisitos
-Java 17 ou superior instalado.
-
-Maven instalado.
-
-MySQL instalado e em execução (versão 8.0.0 ou superior recomendada).
-
-2. Configuração do Banco de Dados
-Abra o arquivo src/main/resources/application.properties e configure as credenciais do seu banco de dados MySQL:
-
-Properties
-
-spring.datasource.url=jdbc:mysql://localhost:3306/powergamerdb
-spring.datasource.username=seu_usuario
-spring.datasource.password=sua_senha
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-3. Build e Execução
-No terminal, navegue até o diretório do projeto (PowerGamer/BACK-END/ecommerce) e execute o seguinte comando para construir e instalar as dependências:
-
-Bash
-
-mvn clean install
-Após a conclusão do build, inicie a aplicação através da sua IDE (IntelliJ, VS Code, etc.) ou via terminal:
-
-Bash
-
-java -jar target/ecommerce-3.5.5.jar
-A aplicação estará disponível em http://localhost:8080.
-
-Endpoints da API
-A seguir, os endpoints disponíveis para testes, que podem ser acessados via Postman:
-
-Endpoint	Método	Descrição
-/api/users/register	POST	Registra um novo usuário no sistema.
-/api/auth/login	POST	Autentica um usuário e retorna um token JWT.
-
-Exportar para as Planilhas
 
 ![image](https://github.com/user-attachments/assets/18c16c6f-282c-48c3-8ceb-62c61badd4e7)
 

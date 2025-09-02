@@ -36,14 +36,14 @@ Este projeto demonstra habilidades em desenvolvimento backend, arquitetura de AP
 
 <img width="700" height="460" alt="Index_powergamer" src="https://github.com/user-attachments/assets/da313fbd-f2fc-4939-aaa8-ed8eceb478f6" />
 
-<img width="388" height="752" alt="Index_powergamer_Mobile" src="https://github.com/user-attachments/assets/da1fc988-df03-4a11-8c0e-d79bead4dee4" />
+<img width="310" height="601" alt="Index_powergamer_Mobile" src="https://github.com/user-attachments/assets/da1fc988-df03-4a11-8c0e-d79bead4dee4" />
 
-<img width="363" height="750" alt="image" src="https://github.com/user-attachments/assets/3660e58c-35c9-4d3e-90a0-e02cec71be4e" />
+<img width="310" height="601" alt="image" src="https://github.com/user-attachments/assets/3660e58c-35c9-4d3e-90a0-e02cec71be4e" />
 
-<img width="386" height="746" alt="pc_powergamer_mobile" src="https://github.com/user-attachments/assets/0ef6fd84-b772-4cc0-8753-ed207905eec7" />
+<img width="310" height="310" alt="pc_powergamer_mobile" src="https://github.com/user-attachments/assets/0ef6fd84-b772-4cc0-8753-ed207905eec7" />
 
 
-<img width="1013" height="465" alt="pc_powergamer" src="https://github.com/user-attachments/assets/144a9493-2f41-4c86-a9c1-5141866740d6" />
+<img width="700" height="460" alt="pc_powergamer" src="https://github.com/user-attachments/assets/144a9493-2f41-4c86-a9c1-5141866740d6" />
 
 
 

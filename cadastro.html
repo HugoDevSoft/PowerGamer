@@ -40,11 +40,11 @@
 
         <form class="formulario" name="cadastro-form" id="cadastro-form">
             <div class="card-formulario">
-                <h3 style="color: #37a0e0;">Cadastre-se</h3>
+                <h3 style="color: #37a0e0;">Crie sua conta</h3>
                 <br>
                 <p>
                     <label for="cadastro-nome">Nome:</label>
-                    <br><input required type="text" name="name" id="cadastro-name">
+                    <br><input required type="text" name="name" id="cadastro-nome">
                 </p>
                 <p>
                     <label for="cadastro-email">E-mail:</label>
@@ -54,13 +54,20 @@
                     <label for="cadastro-senha">Senha:</label>
                     <br><input required type="password" name="password" id="cadastro-senha">
                 </p>
+                <p>
+                    <label for="cadastro-endereco">Endereço:</label>
+                    <br><input required type="text" name="endereco" id="cadastro-endereco">
+                </p>
                 <br>
                 <button type="submit" class="bt-formulario">Cadastrar</button>
-                <div id="message" style="color: green; margin-top: 10px;"></div>
-                <div id="error-message" style="color: red; margin-top: 10px;"></div>
+                <div id="cadastro-message"></div>
+                
+                <h3 style="color: #37a0e0; margin-top: 20px;">
+                    Já possui cadastro?
+                </h3>
+                <a href="login.html" class="bt-formulario" style="text-decoration: none; text-align: center; justify-content: center;">Login</a>
             </div>
         </form>
-
     </main>
 
     <footer>
@@ -89,8 +96,10 @@
     <script src="js/jquery-3.7.1.js"></script>
     <script src="slick/slick.js"></script>
     <script src="js/botaoHambuguer.js"></script>
+
     <script>
         $(document).ready(function () {
+            // Inicializa o slider slick
             $('#destaque-s').slick({
                 autoplay: true,
                 autoplaySpeed: 2200,
@@ -98,40 +107,55 @@
                 arrows: false,
             });
 
-            $('#cadastro-form').submit(function (event) {
-                event.preventDefault(); // Impede o envio do formulário padrão e assim posso usar o JavaScript para fazer a requisição na API
+            // Lógica para o formulário de cadastro
+            const cadastroForm = document.getElementById('cadastro-form');
+            const cadastroMessage = document.getElementById('cadastro-message');
+
+            cadastroForm.addEventListener('submit', async (e) => {
+                e.preventDefault(); // Impede o envio padrão do formulário
 
                 // Coleta os dados do formulário
-                const name = $('#cadastro-name').val();
-                const email = $('#cadastro-email').val();
-                const password = $('#cadastro-senha').val();
-
+                const name = document.getElementById('cadastro-nome').value;
+                const email = document.getElementById('cadastro-email').value;
+                const password = document.getElementById('cadastro-senha').value;
+                const endereco = document.getElementById('cadastro-endereco').value; 
                 const userData = {
-                    name: name,
-                    email: email,
-                    password: password
+                    name,
+                    email,
+                    password,
+                    endereco // Incluindo o endereço no objeto
                 };
 
-                // Envia a requisição POST para a API
-                $.ajax({
-                    url: 'http://localhost:8080/api/users/register',
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify(userData),
-                    success: function (response) {
-                        $('#message').text(response).show();
-                        $('#error-message').hide();
-                        $('#cadastro-form')[0].reset(); // Limpa o formulário
-                    },
-                    error: function (xhr, status, error) {
-                        const errorMessage = xhr.responseText || 'Erro ao registrar usuário.';
-                        $('#error-message').text(errorMessage).show();
-                        $('#message').hide();
+                try {
+                    const response = await fetch('http://localhost:8080/api/users/register', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(userData)
+                    });
+
+                    const result = await response.text(); // Pega a resposta como texto
+
+                    if (response.ok) {
+                        cadastroMessage.style.color = 'green';
+                        cadastroMessage.textContent = 'Cadastro realizado com sucesso!';
+                        // Redireciona para a página de login após o sucesso
+                        setTimeout(() => {
+                            window.location.href = 'login.html';
+                        }, 2000);
+                    } else {
+                        cadastroMessage.style.color = 'red';
+                        cadastroMessage.textContent = `Erro: ${result}`;
                     }
-                });
+
+                } catch (error) {
+                    console.error('Erro na requisição:', error);
+                    cadastroMessage.style.color = 'red';
+                    cadastroMessage.textContent = 'Erro ao se conectar com o servidor.';
+                }
             });
         });
-
     </script>
 </body>
 

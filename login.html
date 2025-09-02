@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description
         content="Seja bem-vindo ao mundo dos Games e a nossa loja a Power Gaming uma loja voltada para gamers casuais e profissionais">
-    <title>Login Power gaming</title>
+    <title>Login Power Gaming</title>
     <link rel="icon" href="imagens/logofooter.jpg" alt="Logotipo">
     <link rel="styleSheet" type="text/css" href="CSS/estilo.css">
     <link rel="stylesheet" href="slick/slick.css">
@@ -15,8 +15,6 @@
 </head>
 
 <body>
-    <!-- HEADER/CABEÇALHO -->
-
     <header id="inicio">
         <div id="logo-header">
             <a href="index.html"><img src="imagens/logopower.png" alt="logo-header" class="Logotipo"></a>
@@ -39,37 +37,37 @@
     </header>
 
     <main id="conteudo">
-        <form class="formulario" method="post" action="login.php" name="login-form" id="login-form">
+
+        <form class="formulario" name="login-form" id="login-form">
             <div class="card-formulario">
-                <h3 style="color: #37a0e0;">Não possuo cadastro</h3>
+                <h3 style="color: #37a0e0;">Login</h3>
                 <br>
-                <p>
-                    <label for="login-nome">Nome:</label>
-                    <br><input required type="name" name="name" id="login-nome">
-                </p>
                 <p>
                     <label for="login-email">E-mail:</label>
                     <br><input required type="email" name="email" id="login-email">
                 </p>
                 <p>
-                    <label for="login-senha">Senha</label>
-                    <br><input required type="password" name="senha" id="login-senha">
+                    <label for="login-senha">Senha:</label>
+                    <br><input required type="password" name="password" id="login-senha">
                 </p>
                 <br>
-                <button type="button" class="bt-formulario" id="botaoCadastro">Cadastrar</button>
+                <button type="submit" class="bt-formulario">Login</button>
+                <div id="login-message"></div>
+                
+                <h3 style="color: #37a0e0; margin-top: 20px;">
+                    Não possui cadastro?
+                </h3>
+                <a href="cadastro.html" class="bt-formulario" style="text-decoration: none; text-align: center;">Cadastre-se</a>
             </div>
         </form>
     </main>
 
     <footer>
-
         <a href="Institucional.html" class="institucional">INSTITUCIONAL</a>
-
         <div id="icon-footer">
             <div class="logo-rodape">
                 <a href="index.html"><img src="imagens/logofooter.jpg" alt="Segundo Logotipo da empresa"></a>
             </div>
-
             <div class="mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.9095933317496!2d-46.63951653036738!3d-23.53900486916648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce585a5ee796b5%3A0x7f480af54ff0b13e!2sShopping%20Santa%20Ifig%C3%AAnia!5e0!3m2!1spt-BR!2sbr!4v1750992128341!5m2!1spt-BR!2sbr"
@@ -77,16 +75,69 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-
         <div class="assinatura">
             <h4>Power Gaming Hugao®DevsØƒt | Todos os direitos reservados™ 2025</h4>
         </div>
-
     </footer>
 
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="slick/slick.js"></script>
     <script src="js/botaoHambuguer.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            // Inicializa o slider slick
+            $('#destaque-s').slick({
+                autoplay: true,
+                autoplaySpeed: 2200,
+                dots: true,
+                arrows: false,
+            });
 
+            // Lógica para o formulário de login
+            const loginForm = document.getElementById('login-form');
+            const loginMessage = document.getElementById('login-message');
+
+            loginForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                const email = document.getElementById('login-email').value;
+                const password = document.getElementById('login-senha').value;
+
+                const loginData = {
+                    email,
+                    password
+                };
+
+                try {
+                    const response = await fetch('http://localhost:8080/api/auth/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(loginData)
+                    });
+
+                    const result = await response.text();
+
+                    if (response.ok) {
+                        loginMessage.style.color = 'green';
+                        loginMessage.textContent = 'Login realizado com sucesso!';
+                        // Em um projeto real, você redirecionaria para a página principal
+                        // window.location.href = 'index.html'; 
+                    } else {
+                        loginMessage.style.color = 'red';
+                        loginMessage.textContent = `Erro: ${result}`;
+                    }
+
+                } catch (error) {
+                    console.error('Erro na requisição:', error);
+                    loginMessage.style.color = 'red';
+                    loginMessage.textContent = 'Erro ao se conectar com o servidor.';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

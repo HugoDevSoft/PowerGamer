@@ -1,6 +1,7 @@
 package com.powergaming.ecommerce.controller;
 
 import com.powergaming.ecommerce.dto.LoginDTO;
+import com.powergaming.ecommerce.security.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -19,6 +20,9 @@ public class AuthController {
     @Autowired
     private AuthenticationManager authenticationManager;
 
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil; // Injetando o JwtTokenUtil
+
     @PostMapping("/login")
     public ResponseEntity<String> authenticateUser(@RequestBody LoginDTO loginDTO) {
         Authentication authentication = authenticationManager.authenticate(
@@ -26,6 +30,9 @@ public class AuthController {
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
-        return ResponseEntity.ok("Login realizado-com-sucesso!");
+        String jwt = jwtTokenUtil.generateToken(authentication); // Gerando o JWT
+
+        // Retornando o JWT em vez da mensagem de sucesso
+        return ResponseEntity.ok(jwt);
     }
 }

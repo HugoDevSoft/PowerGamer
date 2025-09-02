@@ -34,19 +34,23 @@ Este projeto demonstra habilidades em desenvolvimento backend, arquitetura de AP
 ###### Autor ######
  HUGO DEV SOFT 
 
+<img width="1400" height="920" alt="Index_powergamer" src="https://github.com/user-attachments/assets/da313fbd-f2fc-4939-aaa8-ed8eceb478f6" />
+
+<img width="388" height="752" alt="Index_powergamer_Mobile" src="https://github.com/user-attachments/assets/da1fc988-df03-4a11-8c0e-d79bead4dee4" />
+
+<img width="1013" height="465" alt="pc_powergamer" src="https://github.com/user-attachments/assets/144a9493-2f41-4c86-a9c1-5141866740d6" />
+
+<img width="386" height="746" alt="pc_powergamer_mobile" src="https://github.com/user-attachments/assets/318c7576-9f13-41de-9dff-56955f28536d" />
+
+<img width="387" height="741" alt="image" src="https://github.com/user-attachments/assets/e49ef347-63d8-4fbd-b399-1152b44f84e2" />
 
 
 
 
 
-![image](https://github.com/user-attachments/assets/18c16c6f-282c-48c3-8ceb-62c61badd4e7)
-
-![image](https://github.com/user-attachments/assets/ebf773b8-3e84-4907-860f-c3d7534792ea)
 
 
-![image](https://github.com/user-attachments/assets/1d9a3eb9-ac3c-40a3-bba9-558eb76dc637)
 
-![image](https://github.com/user-attachments/assets/3f62a0ba-e3c8-4478-baeb-b452a6f909de)
 
 
 

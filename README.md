@@ -38,7 +38,8 @@ Este projeto demonstra habilidades em desenvolvimento backend, arquitetura de AP
 
 <img width="388" height="752" alt="Index_powergamer_Mobile" src="https://github.com/user-attachments/assets/da1fc988-df03-4a11-8c0e-d79bead4dee4" />
 
-<img width="386" height="746" alt="pc_powergamer_mobile" src="https://github.com/user-attachments/assets/318c7576-9f13-41de-9dff-56955f28536d" />
+<img width="363" height="750" alt="image" src="https://github.com/user-attachments/assets/3660e58c-35c9-4d3e-90a0-e02cec71be4e" />
+
 
 <img width="387" height="741" alt="image" src="https://github.com/user-attachments/assets/e49ef347-63d8-4fbd-b399-1152b44f84e2" />
 

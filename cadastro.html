@@ -99,7 +99,7 @@
             });
 
             $('#cadastro-form').submit(function (event) {
-                event.preventDefault(); // Impede o envio do formulário padrão
+                event.preventDefault(); // Impede o envio do formulário padrão e assim posso usar o JavaScript para fazer a requisição na API
 
                 // Coleta os dados do formulário
                 const name = $('#cadastro-name').val();

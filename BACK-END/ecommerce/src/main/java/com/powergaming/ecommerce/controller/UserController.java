@@ -25,12 +25,13 @@ public class UserController {
     @PostMapping("/register")
     public ResponseEntity<String> registerUser(@RequestBody UserDTO userDTO) {
         if (userRepository.findByEmail(userDTO.getEmail()).isPresent()) {
-            return new ResponseEntity<>("E-mail já cadastrado!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("E-mail já cadastrado tento outro amiguinhO!", HttpStatus.BAD_REQUEST);
         }
 
         User user = new User();
         user.setName(userDTO.getName());
         user.setEmail(userDTO.getEmail());
+        user.setEndereco(userDTO.getEndereco());
 
         // Criptografando a senha antes de salvar
         String encodedPassword = passwordEncoder.encode(userDTO.getPassword());

@@ -25,7 +25,7 @@ public class UserController {
     @PostMapping("/register")
     public ResponseEntity<String> registerUser(@RequestBody UserDTO userDTO) {
         if (userRepository.findByEmail(userDTO.getEmail()).isPresent()) {
-            return new ResponseEntity<>("E-mail já cadastrado tento outro amiguinhO!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("E-mail já cadastrado tente outro amiguinhO0000 kk!", HttpStatus.BAD_REQUEST);
         }
 
         User user = new User();

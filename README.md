@@ -67,7 +67,9 @@ Qualquer Outro Endpoint Protegido: Requer que o token JWT seja incluído no cabe
 ###### Autor ######
  HUGO DEV SOFT 
 
- <img width="488" height="300" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />
+ <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/127ca47d-868c-4401-b3c6-606e39dd5d26" />
 
 
 <img width="350" height="230" alt="Index_powergamer" src="https://github.com/user-attachments/assets/da313fbd-f2fc-4939-aaa8-ed8eceb478f6" />

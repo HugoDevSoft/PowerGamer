@@ -30,6 +30,8 @@ Lombok
 
 JJWT (Java JWT)
 
+POSTMAN
+
 ⚙️ Como Executar o Projeto
 
 Configuração do Banco de Dados:

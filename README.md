@@ -1,35 +1,66 @@
----->> 1. Título do Projeto e Descrição <<----
-##### PowerGamer: API de E-commerce com Spring Boot #####
-API RESTful completa para um e-commerce de jogos, desenvolvida para gerenciar usuários, autenticação e futuros módulos de produtos. 
-Este projeto demonstra habilidades em desenvolvimento backend, arquitetura de APIs e integração com banco de dados.
+PowerGamer - API E-commerce
 
----->> 2. Tecnologias Utilizadas <<----
-##### Tecnologias #####
-- **Backend**: Java 17, Spring Boot 3.5.5
-- **Gerenciamento de Dependências**: Maven
-- **Banco de Dados**: MySQL
-- **ORM**: Spring Data JPA, Hibernate
-- **Segurança**: Spring Security, JWT (futuro)
-- **Autenticação**: BCrypt para criptografia de senhas
-- **Ferramentas**: Postman para testes de API
+Este projeto é a parte de back-end de uma plataforma de e-commerce, focada em segurança e autenticação. A API é desenvolvida usando Spring Boot e Spring Security.
 
----->> 3. Como Rodar o Projeto <<----
-##### Como Rodar o Projeto #####
-  1A.  **Clone o repositório:**
-    `git clone https://www.youtube.com/watch?v=GRf6so_sois`
-  2A.  **Configuração do Banco de Dados:**
-    - Certifique-se de ter o MySQL instalado e rodando.
-    - Crie um banco de dados com o nome `powergamer_db`.
-    - Atualize o arquivo `src/main/resources/application.properties` com suas credenciais do MySQL.
-  3A.**Executar o Projeto:**
-    - Abra o projeto na sua IDE (IntelliJ, VS Code).
-    - Execute o comando `mvn clean install` no terminal da pasta `BACK-END/ecommerce`.
-    - Inicie a aplicação Spring Boot a partir da sua IDE.
----->> 4. Endpoints da API <<----  
-### Endpoints da API
-**Registrar um novo usuário**
-**Login do Usuário** (será implementado na próxima etapa)
+🚀 Funcionalidades Principais
 
+Sistema de Autenticação com JWT: A API utiliza JSON Web Tokens (JWT) para um sistema de autenticação e autorização seguro e sem estado.
+
+Cadastro de Usuário: Endpoint público para registro de novos usuários. As senhas são criptografadas usando o BCryptPasswordEncoder para garantir a segurança.
+
+Autenticação de Usuário: Endpoint para login, que retorna um token JWT após a validação das credenciais do usuário.
+
+Integração com MySQL: O banco de dados utilizado é o MySQL, gerenciado pelo Spring Data JPA e Hibernate.
+
+Controle de Acesso: Rotas públicas (/api/users/register, /api/users/login) são liberadas, enquanto as demais são protegidas e exigem um token de autenticação válido.
+
+🛠️ Tecnologias Utilizadas
+
+Java 17
+
+Spring Boot 3.5.5
+
+Spring Security
+
+Spring Data JPA
+
+MySQL
+
+Lombok
+
+JJWT (Java JWT)
+
+⚙️ Como Executar o Projeto
+
+Configuração do Banco de Dados:
+
+Garanta que o MySQL está instalado e rodando na sua máquina.
+
+Abra o arquivo src/main/resources/application.properties.
+
+Verifique se as configurações de conexão (spring.datasource.url, username, password) estão corretas para o seu ambiente.
+
+Executar a Aplicação:
+
+Você pode rodar a classe Application.java diretamente da sua IDE (IntelliJ, por exemplo).
+
+A aplicação irá iniciar no endereço http://localhost:8080.
+
+🔒 Endpoints de Segurança
+
+POST /api/users/register: Endpoint para criar um novo usuário.
+
+Corpo da Requisição: JSON com email e password.
+
+Observação: Este é um endpoint público e não requer autenticação.
+
+POST /api/users/login: Endpoint para autenticar um usuário.
+
+Corpo da Requisição: JSON com email e password.
+
+Retorno: Se as credenciais estiverem corretas, a resposta conterá um token JWT.
+
+Qualquer Outro Endpoint Protegido: Requer que o token JWT seja incluído no cabeçalho Authorization da requisição, no formato Bearer <token>.
 
 ###### Autor ######
  HUGO DEV SOFT 

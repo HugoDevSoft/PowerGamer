@@ -67,13 +67,17 @@ Qualquer Outro Endpoint Protegido: Requer que o token JWT seja incluído no cabe
 ###### Autor ######
  HUGO DEV SOFT 
  
-CREATER  <img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />
+CREATER  
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />
 
-READ  <img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/bd316339-6acf-4444-9739-01e61954fff4" />
+READ  
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/bd316339-6acf-4444-9739-01e61954fff4" />
 
-DELETE  <img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/13aede13-3e5d-43b8-bc13-93bb6662f477" />
+DELETE  
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/13aede13-3e5d-43b8-bc13-93bb6662f477" />
 
-UPDATE  <img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/3275e281-f384-4128-80f8-43c283cbee74" />
+UPDATE  
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/3275e281-f384-4128-80f8-43c283cbee74" />
 
 
 

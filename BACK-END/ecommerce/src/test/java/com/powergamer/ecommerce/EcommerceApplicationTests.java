@@ -1,10 +1,10 @@
-package com.powergaming.ecommerce;
+package com.powergamer.ecommerce;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-//@SpringBootTest
-class ApplicationTests {
+@SpringBootTest
+class EcommerceApplicationTests {
 
 	@Test
 	void contextLoads() {

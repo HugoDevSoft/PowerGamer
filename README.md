@@ -68,6 +68,7 @@ Qualquer Outro Endpoint Protegido: Requer que o token JWT seja incluído no cabe
  HUGO DEV SOFT 
  
 CREATER
+
 <img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />
 
 READ

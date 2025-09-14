@@ -69,11 +69,11 @@ Qualquer Outro Endpoint Protegido: Requer que o token JWT seja incluído no cabe
  
 CREATER
 
-<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />
-
-READ
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />READ
 
 <img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/bd316339-6acf-4444-9739-01e61954fff4" />
+
+
 
 DELETE
 

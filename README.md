@@ -69,11 +69,11 @@ Qualquer Outro Endpoint Protegido: Requer que o token JWT seja incluído no cabe
  
 CREATER
 
-<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />READ
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />
+
+READ
 
 <img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/bd316339-6acf-4444-9739-01e61954fff4" />
-
-
 
 DELETE
 
@@ -85,8 +85,6 @@ UPDATE
 
 
 
-
-
 <img width="350" height="230" alt="Index_powergamer" src="https://github.com/user-attachments/assets/da313fbd-f2fc-4939-aaa8-ed8eceb478f6" />
 
 <img width="155" height="300" alt="Index_powergamer_Mobile" src="https://github.com/user-attachments/assets/da1fc988-df03-4a11-8c0e-d79bead4dee4" />
@@ -94,7 +92,6 @@ UPDATE
 <img width="155" height="300" alt="image" src="https://github.com/user-attachments/assets/3660e58c-35c9-4d3e-90a0-e02cec71be4e" />
 
 <img width="155" height="300" alt="pc_powergamer_mobile" src="https://github.com/user-attachments/assets/0ef6fd84-b772-4cc0-8753-ed207905eec7" />
-
 
 <img width="350" height="230" alt="pc_powergamer" src="https://github.com/user-attachments/assets/144a9493-2f41-4c86-a9c1-5141866740d6" />
 

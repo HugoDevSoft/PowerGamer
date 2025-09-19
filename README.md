@@ -67,17 +67,17 @@ Qualquer Outro Endpoint Protegido: Requer que o token JWT seja incluído no cabe
 ###### Autor ######
  HUGO DEV SOFT 
  
-CREATER
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />
+CREATER  
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/e9392c60-4215-45e1-ab2e-1d4ebcbe225a" />
 
-READ
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/bd316339-6acf-4444-9739-01e61954fff4" />
+READ  
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/bd316339-6acf-4444-9739-01e61954fff4" />
 
-DELETE
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/13aede13-3e5d-43b8-bc13-93bb6662f477" />
+DELETE  
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/13aede13-3e5d-43b8-bc13-93bb6662f477" />
 
-UPDATE
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/3275e281-f384-4128-80f8-43c283cbee74" />
+UPDATE  
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/3275e281-f384-4128-80f8-43c283cbee74" />
 
 
 
@@ -90,7 +90,6 @@ UPDATE
 <img width="155" height="300" alt="image" src="https://github.com/user-attachments/assets/3660e58c-35c9-4d3e-90a0-e02cec71be4e" />
 
 <img width="155" height="300" alt="pc_powergamer_mobile" src="https://github.com/user-attachments/assets/0ef6fd84-b772-4cc0-8753-ed207905eec7" />
-
 
 <img width="350" height="230" alt="pc_powergamer" src="https://github.com/user-attachments/assets/144a9493-2f41-4c86-a9c1-5141866740d6" />
 

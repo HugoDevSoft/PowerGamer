@@ -1,6 +1,6 @@
-package com.powergamer.ecommerce.repository;
+package com.powergamer.ecommerce.infrastructure.repository;
 
-import com.powergamer.ecommerce.model.User;
+import com.powergamer.ecommerce.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

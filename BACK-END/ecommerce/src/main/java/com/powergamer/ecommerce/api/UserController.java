@@ -1,7 +1,7 @@
-package com.powergamer.ecommerce.controller;
+package com.powergamer.ecommerce.api;
 
-import com.powergamer.ecommerce.model.User;
-import com.powergamer.ecommerce.service.UserService;
+import com.powergamer.ecommerce.domain.User;
+import com.powergamer.ecommerce.application.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

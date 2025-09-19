@@ -1,7 +1,7 @@
-package com.powergamer.ecommerce.service;
+package com.powergamer.ecommerce.application;
 
-import com.powergamer.ecommerce.model.User;
-import com.powergamer.ecommerce.repository.UserRepository;
+import com.powergamer.ecommerce.domain.User;
+import com.powergamer.ecommerce.infrastructure.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

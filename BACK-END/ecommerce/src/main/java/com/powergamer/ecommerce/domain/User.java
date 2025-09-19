@@ -1,4 +1,4 @@
-package com.powergamer.ecommerce.model;
+package com.powergamer.ecommerce.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

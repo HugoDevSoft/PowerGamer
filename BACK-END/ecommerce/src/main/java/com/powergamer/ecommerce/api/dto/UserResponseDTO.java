@@ -1,16 +1,13 @@
-package com.powergamer.ecommerce.domain;
+package com.powergamer.ecommerce.api.dto;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
-public class User {
+public class UserResponseDTO {
     private Long id;
     private String name;
     private String email;
-    private String password;
     private String endereco;
 }
